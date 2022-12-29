@@ -163,7 +163,7 @@ async function initShortsTrackerData(shortsTracker, serverData) {
 
 async function waitJobsAreFinished(serverHost, serverAdminApiKey) {
   for (let i = 0; i < 10; i++) {
-    await sleep(2000)
+    await sleep(2)
     const [ordersInfo, positionsInfo] = await Promise.all([
       getRequest(serverHost, `/orders/info?key=${encodeURIComponent(serverAdminApiKey)}`),
       getRequest(serverHost, `/positions/info?key=${encodeURIComponent(serverAdminApiKey)}`)

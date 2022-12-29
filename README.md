@@ -15,3 +15,8 @@ Install packages:
 
 ## Run Tests
 `npx hardhat test`
+
+
+
+npx hardhat node --fork https://fantom-testnet.public.blastapi.io
+npx hardhat run scripts/deployAll.js --network localhost
